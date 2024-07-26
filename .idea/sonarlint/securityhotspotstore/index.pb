@@ -27,3 +27,15 @@ e
 5src/main/java/com/rental/crm/service/ItemService.java,9\4\9461770a311d3aff683495e6bfa29dce9c2c69ac
 n
 >src/main/java/com/rental/crm/service/impl/ItemServiceImpl.java,7\8\78b932bc7574bc0b7e74b97e49bb6e7c35d1db57
+m
+=src/main/java/com/rental/crm/controller/RentalController.java,2\0\20b2500378cc7f44e4e12204abd4a38349bfa8ae
+\
+,src/main/java/com/rental/crm/dto/Rental.java,c\0\c08332169611bcbfaefabf589c34d55a54e430ba
+e
+5src/main/java/com/rental/crm/entity/RentalEntity.java,6\a\6a8e63e4d9357f10773e7f28a8c5fbd4f517be1f
+m
+=src/main/java/com/rental/crm/repository/RentalRepository.java,9\6\9639f098124d21272249ad4c4433898b9290ef59
+g
+7src/main/java/com/rental/crm/service/RentalService.java,4\e\4e4fd0aa7c52d7f94d081c1ffe5736fe1d53100b
+p
+@src/main/java/com/rental/crm/service/impl/RentalServiceImpl.java,b\5\b5e8dfd2020a6cffddc1244f63f3eb2bdfd17a4e
