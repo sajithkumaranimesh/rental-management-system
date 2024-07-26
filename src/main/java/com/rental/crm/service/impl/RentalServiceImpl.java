@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -24,6 +25,12 @@ public class RentalServiceImpl implements RentalService {
 
     @Override
     public List<Rental> retrieve() {
-        return List.of();
+
+        List<Rental> rentalList = new ArrayList<>();
+
+        for (RentalEntity rentalEntity : repository.findAll()) {
+            rentalList.add(new ModelMapper().map(rentalEntity, Rental.class));
+        }
+        return rentalList;
     }
 }
