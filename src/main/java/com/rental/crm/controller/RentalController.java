@@ -25,4 +25,21 @@ public class RentalController {
     public List<Rental> retrieve(){
         return service.retrieve();
     }
+
+    @GetMapping("/get-by-id/{id}")
+    public Rental retrieveById(@PathVariable Long id){
+        return service.retrieveById(id);
+    }
+
+    @PutMapping("/update")
+    public Boolean updateRental(@RequestBody Rental rental){
+        service.updateRental(rental);
+        return true;
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public Boolean deleteRentalById(@PathVariable Long id){
+        service.deleteRentalById(id);
+        return true;
+    }
 }

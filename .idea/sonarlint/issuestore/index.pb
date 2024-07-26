@@ -39,3 +39,5 @@ g
 7src/main/java/com/rental/crm/service/RentalService.java,4\e\4e4fd0aa7c52d7f94d081c1ffe5736fe1d53100b
 p
 @src/main/java/com/rental/crm/service/impl/RentalServiceImpl.java,b\5\b5e8dfd2020a6cffddc1244f63f3eb2bdfd17a4e
+k
+;src/main/java/com/rental/crm/entity/RentalDetailEntity.java,5\2\52b63be6987f2922a2697895ae0c57a940167912

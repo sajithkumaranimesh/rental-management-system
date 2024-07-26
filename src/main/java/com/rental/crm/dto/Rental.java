@@ -2,6 +2,8 @@ package com.rental.crm.dto;
 
 import lombok.*;
 
+import java.util.List;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
@@ -16,4 +18,5 @@ public class Rental {
     private String fine;
     private String totalCost;
     private Long customerId;
+    private List<Long> itemIds;
 }

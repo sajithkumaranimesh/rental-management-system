@@ -1,10 +1,9 @@
 package com.rental.crm.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -12,6 +11,7 @@ import lombok.*;
 @Getter
 @ToString
 @Entity
+@Table(name = "rental")
 public class RentalEntity {
 
     @Id
@@ -25,4 +25,5 @@ public class RentalEntity {
     private String fine;
     private String totalCost;
     private Long customerId;
+    private List<Long> itemIds;
 }

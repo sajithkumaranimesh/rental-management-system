@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -32,5 +33,25 @@ public class RentalServiceImpl implements RentalService {
             rentalList.add(new ModelMapper().map(rentalEntity, Rental.class));
         }
         return rentalList;
+    }
+
+    @Override
+    public Rental retrieveById(Long id) {
+        Optional<RentalEntity> rentalEntity = repository.findById(id);
+        return new ModelMapper().map(rentalEntity, Rental.class);
+    }
+
+    @Override
+    public void updateRental(Rental rental) {
+        if(repository.findById(rental.getId()).isPresent()){
+            repository.save(new ModelMapper().map(rental, RentalEntity.class));
+        }
+    }
+
+    @Override
+    public void deleteRentalById(Long id) {
+        if (repository.findById(id).isPresent()){
+            repository.deleteById(id);
+        }
     }
 }
